@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd">
+       
+    <!-- 声明使用注解的风格 -->
+	<context:annotation-config />
+	
+    <!-- Aspect支持 （动态切面接入支持） -->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+    
+    <!-- 扫描@Service和@Repository -->
+	<context:component-scan base-package="com.ddup" use-default-filters="false">
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+	</context:component-scan>
+
+    <!-- JDBC 配置文件 -->
+    <context:property-placeholder location="classpath:db.properties"/>
+</beans>
