@@ -29,7 +29,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  * @version : 1.0.0
  */
 @WebAppConfiguration
-@ContextConfiguration(locations = {"spring-context-i18n.xml"})
+@ContextConfiguration(locations = {"classpath:spring-mvc-i18n.xml"})
 public class BaseControllerTest {
     
     @Autowired
