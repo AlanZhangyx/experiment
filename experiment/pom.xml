@@ -64,7 +64,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.9</version>
+            <version>5.1.37</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
@@ -124,7 +124,7 @@
 	    <dependency>
 	        <groupId>log4j</groupId>
 	        <artifactId>log4j</artifactId>
-	        <version>1.2.9</version>
+	        <version>1.2.17</version>
 	    </dependency>
 	    
         <!-- 7 json-lib is convenient,but jackson is spring annotation用来解析返回json数据的 -->  

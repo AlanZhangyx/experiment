@@ -46,7 +46,6 @@ public class ValidateController {
                 errorArray.add(tempJson);
             }
         }
-        
         return "";
         
     }   
