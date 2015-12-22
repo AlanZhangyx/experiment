@@ -3,7 +3,7 @@ package com.ddup.spring.mvc.dto;
 import org.hibernate.validator.constraints.NotBlank;
 
 public class TestReq {
-    @NotBlank(message = "{error.user.userName.NotBlank}")
+	@NotBlank(message = "{error.user.userName.NotBlank}")
     private String userName;
     private String password;
     
