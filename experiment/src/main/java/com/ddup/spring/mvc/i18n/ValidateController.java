@@ -1,5 +1,6 @@
 package com.ddup.spring.mvc.i18n;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.validation.Valid;
@@ -48,5 +49,15 @@ public class ValidateController {
         }
         return "";
         
-    }   
+    }
+    
+    static class OOMObject{}
+    
+    @RequestMapping(value = "/main")
+    public String main(){
+    	List<OOMObject> list = new ArrayList<OOMObject>();
+        while (true) {
+            list.add(new OOMObject());
+        }
+    }
 }
