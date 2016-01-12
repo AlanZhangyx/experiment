@@ -25,6 +25,7 @@
 		<property name="caches">
 			<set>
 				<bean name="users" class="org.springframework.cache.concurrent.ConcurrentMapCacheFactoryBean"/> 
+				<bean name="long" class="org.springframework.cache.concurrent.ConcurrentMapCacheFactoryBean"/> 
 			</set>
 		</property>
 	</bean>

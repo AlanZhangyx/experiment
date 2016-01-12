@@ -39,8 +39,8 @@ public class CacheTest {
 		map.put("key", "1");
 		System.out.println(userService.getXXX(map));*/
 		
-		//2 不同的map呢
-		Map<String, Object> map = new HashMap<String, Object>();
+		//2 不同的map呢？得不到想要的结果，应该必须自定义generatorkey策略才可以
+/*		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("key", "1");
 		System.out.println("第1步");
 		System.out.println(userService.getXXX(map));
@@ -58,6 +58,12 @@ public class CacheTest {
 		Map<String, Object> map3 = new HashMap<String, Object>();
 		map.put("key", "1");
 		System.out.println("第4步");
-		System.out.println(userService.getXXX(map3));
+		System.out.println(userService.getXXX(map3));*/
+		
+		//3 基本形,可以
+		Map<String, Long> map = new HashMap<String, Long>();
+		map.put("key", 1l);
+		System.out.println(userService.getLong(map));
+		System.out.println(userService.getLong(map));
 	}
 }

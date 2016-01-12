@@ -17,7 +17,7 @@ public class UserService {
 	 * @return
 	 * @TestUrl
 	 */
-	@Cacheable(value = "users", key ="#map.get(key)")
+	@Cacheable(value = "users")
 	public String getXXX(Map<String, Object> map){
 		String key = (String)map.get("key");
 		if ("1".equals(key)) {
@@ -30,4 +30,19 @@ public class UserService {
 		}
 		return key;
 	}
+	
+	@Cacheable(value = "long")
+	public long getLong(Map<String, Long> map){
+		long key = map.get("key");
+		if (key == 1) {
+			key = 11;
+			System.out.println("1不走缓存");
+		}
+		if (key == 2) {
+			key = 22;
+			System.out.println("2不走缓存");
+		}
+		return key;
+	}
+	
 }
