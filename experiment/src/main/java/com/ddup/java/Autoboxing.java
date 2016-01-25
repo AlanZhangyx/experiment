@@ -28,7 +28,14 @@ public class Autoboxing {
 			//2.2 是的话转为primitive比较
 		//所以：第6个 false
 		
-		
+		System.out.println(new Long(3).equals(new Integer(3)));
+		//20160125
+		//包装类最好：
+		//		1. 与primitive进行==比较
+		//		2. 与自身类型进行equals比较
+		//包装类不要：
+		//		1. 与其他包装类型==比较和equals比较
+		//		2. 与自身类型进行==比较
 	}
 
 }
