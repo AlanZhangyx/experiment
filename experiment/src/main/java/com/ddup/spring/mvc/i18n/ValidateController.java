@@ -19,7 +19,7 @@ import net.sf.json.JSONObject;
 
 
 @RestController
-@RequestMapping(value = "/vali", produces="application/json;charset=UTF-8",method = {RequestMethod.GET,RequestMethod.PUT})
+@RequestMapping(value = "/vali", produces="application/json;charset=UTF-8",method = {RequestMethod.GET,RequestMethod.POST})
 public class ValidateController {
     
     /**
