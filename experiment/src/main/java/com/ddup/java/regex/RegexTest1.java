@@ -62,19 +62,28 @@ public class RegexTest1 {
 		str33 = str33.replaceAll(regex33, "$1****$2");*/
 		
 		/**
-		 * 4. 获取
+		 * 4. 获取，用RegEX描述出要获取的内容
 		 * 方法：
 		 * 目标：
 		 * 	4.1 获取3个字母组成的单词
+		 *  4.2 获取(前边的部分
 		 */
 		String str41 = "asdf, sdd*adf%$$sdsf";
 		String regex41 = "[a-z]{3}";
-		Pattern p = Pattern.compile(regex41);
-		Matcher m = p.matcher(str41);
-		while(m.find()){//查找一个匹配的子序列
-			System.out.println(m.group());//返回之前匹配的输入子序列
+		
+		Pattern p41 = Pattern.compile(regex41);
+		Matcher m41 = p41.matcher(str41);
+		while(m41.find()){//查找一个匹配的子序列
+			System.out.println(m41.group());//返回之前匹配的输入子序列
 		}
-		 
+		
+		String str42 = "北京市(朝阳区)(西城区)(海淀区)";
+		String regex42 = ".*?(?=\\()";//首先，reluctant匹配任意字符；接着，(?=\\()匹配"("前面的内容，也就是“首先”的内容了
+		Pattern p42 = Pattern.compile(regex42);
+		Matcher m42 = p42.matcher(str42);
+		if (m42.find()) {
+			 System.out.println(m42.group());
+		}
 		
 	}
 	
