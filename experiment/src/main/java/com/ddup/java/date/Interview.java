@@ -5,6 +5,10 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+import org.junit.Assert;
+
+import com.mchange.v2.sql.filter.SynchronizedFilterDataSource;
+
 public class Interview {
 
 	/**
@@ -16,7 +20,9 @@ public class Interview {
 		- 1. 如何取得年月日、小时分钟秒？ 
 		- 2. 如何取得从1970年1月1日0时0分0秒到现在的毫秒数？ 
 		- 3. 如何取得某月的最后一天？ 
-		- 4. 如何格式化日期？ */
+		- 4. 如何格式化日期？ 
+		- 5. 打印昨天的当前时刻
+		*/
 		
 		//1
 		Calendar calendar = Calendar.getInstance();
@@ -41,6 +47,11 @@ public class Interview {
 		DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		String dateString4 = df.format(new Date());
 		System.out.println(dateString4);
+		
+		//5 打印昨天的当前时刻
+		calendar = Calendar.getInstance();
+		calendar.add(Calendar.DATE, -1);
+		System.out.println(calendar.getTime());
 		
 	}
 
