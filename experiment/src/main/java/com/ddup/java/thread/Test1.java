@@ -1,5 +1,7 @@
 package com.ddup.java.thread;
 
+import org.junit.Test;
+
 /**
  * 每个对象都有
  * 	1. 一个关联的monitor
@@ -19,6 +21,14 @@ public class Test1 {
 		//ThreadLocal
 		//ReentrantLock
 		//Thread
+		
+	}
+	
+	@Test
+	public void testWait() throws InterruptedException{
+		synchronized (this){
+			this.wait();
+		}
 	}
 
 }
