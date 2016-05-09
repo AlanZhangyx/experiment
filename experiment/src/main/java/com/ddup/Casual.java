@@ -26,6 +26,7 @@ public class Casual {
         	System.out.println(arr[i]);
 		}
         
+        
     }
     
     public static void quickSort(int[] arr, int left, int right){
