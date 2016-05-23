@@ -17,4 +17,10 @@ public class IServiceImpl extends UnicastRemoteObject implements IService {
 		return "收到" + name + "!";
 	}
 
+	@Override
+	public TestDTO sayObject(TestDTO dto) throws RemoteException {
+		dto.setUserName("服务端重新set");
+		return dto;
+	}
+
 }

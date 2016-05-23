@@ -10,4 +10,6 @@ import java.rmi.RemoteException;
  */
 public interface IService extends Remote {
 	String sayHelloByName(String name) throws RemoteException;
+	
+	TestDTO sayObject(TestDTO dto) throws RemoteException;
 }
