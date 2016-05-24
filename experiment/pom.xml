@@ -175,6 +175,13 @@
 			<artifactId>hibernate-validator</artifactId>
 			<version>5.2.2.Final</version>
 		</dependency>
+		
+		<!-- 11 ActiveMQ -->
+		<dependency>
+		    <groupId>org.apache.activemq</groupId>
+		    <artifactId>activemq-all</artifactId>
+		    <version>5.13.3</version>
+		</dependency>
 
     </dependencies>
     
