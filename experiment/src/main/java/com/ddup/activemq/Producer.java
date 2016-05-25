@@ -4,7 +4,7 @@ import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
 import javax.jms.Destination;
 import javax.jms.JMSException;
-import javax.jms.MessageConsumer;
+import javax.jms.Message;
 import javax.jms.MessageProducer;
 import javax.jms.Session;
 
@@ -17,9 +17,8 @@ public class Producer {
 	//密码
 	private static final String PASSWORD = ActiveMQConnection.DEFAULT_PASSWORD;
 	//broker的地址
-	private static final String BROKERURL = ActiveMQConnection.DEFAULT_BROKER_URL;
-	//消息数
-	private static final int SENDNUM = 10;
+	//private static final String BROKERURL = "tcp://139.129.132.252:61616";
+	private static final String BROKERURL = "failover:(tcp://139.129.132.252:61616)";
 	
 	
 	public static void main(String[] args){
@@ -52,8 +51,8 @@ public class Producer {
 		
 		//client uses to create a connection with a JMS provider.
 		ConnectionFactory connectionFactory = new ActiveMQConnectionFactory(
-				USERNAME,
-				PASSWORD,
+				/*USERNAME,
+				PASSWORD,*/
 				BROKERURL
 				);
 		
@@ -61,21 +60,30 @@ public class Producer {
 		Session session = null;
 		Destination destination = null;
 		MessageProducer messageProducer = null;
-		MessageConsumer messageConsumer = null;
+		//MessageConsumer messageConsumer = null;
 		try {
 			connection = connectionFactory.createConnection();
 			connection.start();
-			
 			session = connection.createSession(true, Session.AUTO_ACKNOWLEDGE);
-			
 			destination = session.createQueue("daily_news");
-			
 			messageProducer = session.createProducer(destination);
-			
-//			messageProducer.send(message);
+			for (int i = 0; i < 10; i++) {
+				Message message = session.createTextMessage("新闻：" + i);
+				messageProducer.send(message);
+				System.out.println(message);
+			}
+			session.commit();
 			
 		} catch (JMSException e) {
 			e.printStackTrace();
+		} finally {
+			 if(connection != null){
+                try {
+                    connection.close();
+                } catch (JMSException e) {
+                    e.printStackTrace();
+                }
+            }
 		}
 		
 	}
