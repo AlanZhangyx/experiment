@@ -5,10 +5,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-import org.junit.Assert;
-
-import com.mchange.v2.sql.filter.SynchronizedFilterDataSource;
-
 public class Interview {
 
 	/**

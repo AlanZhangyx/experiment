@@ -57,7 +57,7 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.10</version>
-            <scope>test</scope>
+            <scope>compile</scope>
         </dependency>
         
         <!-- 3 DB drive runtime:测试/运行时有效,编译时只需要JDK提供的interface就好 -->
@@ -67,11 +67,16 @@
             <version>5.1.9</version>
             <scope>runtime</scope>
         </dependency>
-        <dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>1.0.16</version>
+		</dependency>
+		<!-- <dependency>
             <groupId>com.mchange</groupId>
             <artifactId>c3p0</artifactId>
             <version>0.9.5.1</version>
-        </dependency>
+        </dependency> -->
 
         <!-- 4 spring compile:默认范围编译/测试/运行都有效 -->
         <dependency>
@@ -257,7 +262,7 @@
             
             <!-- maven compile pulgin:maven的update project不会使用Eclipse指定的jdk compile version -->
             <!-- 有了这个插件指定的target版本，使用maven的update才能正确用指定的JDK版本 -->
-            <plugin>
+            <!-- <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.3</version>
@@ -265,7 +270,7 @@
 					<source>${java.version}</source>
 					<target>${java.version}</target>
 				</configuration>
-			</plugin>
+			</plugin> -->
 		</plugins>
 	</build>
 </project>

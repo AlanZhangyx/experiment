@@ -5,11 +5,11 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
-       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd ">
      
      <!-- DefaultAnnotationHandlerMapping与AnnotationMethodHandlerAdapter 两个bean,是spring MVC为@Controllers分发请求所必须的。
-并提供了：数据绑定支持，@NumberFormatannotation支持，@DateTimeFormat支持，@Valid支持，读写XML的支持（JAXB），读写JSON的支持（Jackson）。 -->
-    <!-- 指定自己采用的自定义的validator实现HibernateValidator -->
+并提供了：数据绑定支持，@NumberFormatannotation支持，@DateTimeFormat支持，@Valid支持，读写XML的支持（JAXB），读写JSON的支持（Jackson）。
+    指定自己采用的自定义的validator实现HibernateValidator -->
 	<mvc:annotation-driven validator="validator"/>
     
     <!-- 仅scan所有的@controller -->
@@ -25,13 +25,13 @@
         <property name="useCodeAsDefaultMessage" value="true" />
     </bean>
     
-<!--     <bean id="handlerMapping" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
+    <bean id="handlerMapping" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
         <property name="interceptors">
             <list>
                 <bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor"/>
             </list>
         </property>
-    </bean> -->
+    </bean>
     
     <!-- ++++++++++++++++++++++++++++++++++++++ i18n end +++++++++++++++++++++++++++++++++++++++++ -->
     

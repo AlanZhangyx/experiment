@@ -82,7 +82,8 @@ public class RegexTest1 {
 		Pattern p42 = Pattern.compile(regex42);
 		Matcher m42 = p42.matcher(str42);
 		if (m42.find()) {
-			 System.out.println(m42.group());
+		    //group(x) 是返回指定的组，捕获的字串；group()相当于group(0)即获取第0组去匹配后，所得到的子串
+			System.out.println(m42.group());
 		}
 		
 	}
