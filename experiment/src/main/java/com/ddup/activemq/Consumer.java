@@ -36,11 +36,11 @@ public class Consumer {
 		MessageConsumer messageConsumer = null;
 		try {
 			connection = connectionFactory.createConnection();
-			connection.start();
+			
 			session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 			destination = session.createQueue("daily_news");
 			messageConsumer = session.createConsumer(destination);
-			
+			connection.start();
 			while (true) {
 				TextMessage message = (TextMessage)messageConsumer.receive(10000);
 				if (message !=null ) {

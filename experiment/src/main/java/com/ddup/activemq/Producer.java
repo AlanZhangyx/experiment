@@ -63,10 +63,11 @@ public class Producer {
 		//MessageConsumer messageConsumer = null;
 		try {
 			connection = connectionFactory.createConnection();
-			connection.start();
+			
 			session = connection.createSession(true, Session.AUTO_ACKNOWLEDGE);
 			destination = session.createQueue("daily_news");
 			messageProducer = session.createProducer(destination);
+			connection.start();
 			for (int i = 0; i < 10; i++) {
 				Message message = session.createTextMessage("新闻：" + i);
 				messageProducer.send(message);
