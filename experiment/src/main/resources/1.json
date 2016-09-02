@@ -1,0 +1,15 @@
+{
+	"content": {
+		"companyDetailPageCityString": "{\"success\":false,\"message\":\"没有获取相关数据！\"}",
+		"jobListPageCityString": "{\"success\":false,\"message\":\"没有获取相关数据！\"}",
+		"jobListPageCompanyString": "{\"success\":false,\"message\":\"没有获取相关数据！\"}",
+		"jobDetailPageCompanyString": "{\"success\":false,\"message\":\"没有获取相关数据！\"}",
+		"companyDetailPagePositionString": "{\"success\":true,\"message\":\"查询数据成功！\",\"data\":[{\"id\":155,\"title\":\"HTML5招聘\",\"linkUrl\":\"http://www.lagou.com/zhaopin/HTML5/\",\"recommendType\":\"Jobs\",\"showPosition\":\"company_details\",\"enable\":0,\"rank\":1,\"openType\":\"_blank\"},{\"id\":153,\"title\":\"产品经理招聘\",\"linkUrl\":\"http://www.lagou.com/zhaopin/chanpinjingli/\",\"recommendType\":\"Jobs\",\"showPosition\":\"company_details\",\"enable\":0,\"rank\":2,\"openType\":\"_blank\"}]}",
+		"jobDetailPageCityString": "{\"success\":false,\"message\":\"没有获取相关数据！\"}"
+	},
+	"requestId": null,
+	"success": false,
+	"msg": null,
+	"code": 0,
+	"resubmitToken": null
+}
