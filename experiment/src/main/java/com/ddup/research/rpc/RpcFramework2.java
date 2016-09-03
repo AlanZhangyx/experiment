@@ -1,4 +1,4 @@
-package com.ddup.research;
+package com.ddup.research.rpc;
 
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;

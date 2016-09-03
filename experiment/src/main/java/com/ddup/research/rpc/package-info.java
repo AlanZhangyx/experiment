@@ -36,4 +36,4 @@
  * <li>alanzhang 2016年9月2日<br></li>
  * </ul>
  */
-package com.ddup.research;
+package com.ddup.research.rpc;

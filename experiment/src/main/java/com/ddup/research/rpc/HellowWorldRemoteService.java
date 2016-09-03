@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.ddup.research;
+package com.ddup.research.rpc;
 
 import java.util.Map;
 

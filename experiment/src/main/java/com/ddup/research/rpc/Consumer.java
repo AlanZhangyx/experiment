@@ -1,4 +1,4 @@
-package com.ddup.research;
+package com.ddup.research.rpc;
 
 import java.util.HashMap;
 import java.util.Map;
