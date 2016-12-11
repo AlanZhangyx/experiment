@@ -1,11 +1,23 @@
 package com.ddup.java.clazz;
 
+import java.lang.reflect.Method;
+
 public class ClassTest {
 
-	public static void main(String[] args) {
-		Class<ClassTest> clazz = ClassTest.class;
+    static int i = 1;
+    
+	public static void main(String[] args) throws Exception {
+	    while (true) {
+	        _sdf();
+        }
+	    
 	}
 	
-	public void _sdf(){}
+	public static void _sdf(){
+	    if (i == 10) {
+	        System.out.println();
+        }
+	    System.out.println(i++);
+	}
 
 }
