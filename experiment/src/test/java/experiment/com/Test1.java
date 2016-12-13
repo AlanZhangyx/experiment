@@ -1,9 +1,5 @@
 package experiment.com;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
-import java.util.Calendar;
-import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -39,6 +35,16 @@ public class Test1 {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }*/
+        
+        String email = "1234@sdf.sdf";
+        
+        Pattern p = Pattern.compile("(@)");
+        Matcher Matcher = p.matcher(email);
+        if (Matcher.find()) {
+            String s = Matcher.group(1);
+            System.out.println(s);
+        }
+        
     }
     
 
