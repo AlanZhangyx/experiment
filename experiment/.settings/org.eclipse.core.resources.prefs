@@ -5,4 +5,5 @@ encoding//src/main/resources/i18n/messages_en.properties=UTF-8
 encoding//src/main/resources/i18n/messages_zh_CN.properties=UTF-8
 encoding//src/main/resources/log4j.properties=UTF-8
 encoding//src/test/java=UTF-8
+encoding//src/test/java/experiment/com/Test22.java=UTF-8
 encoding/<project>=UTF-8

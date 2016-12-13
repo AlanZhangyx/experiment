@@ -1,15 +1,50 @@
 {
-	"content": {
-		"companyDetailPageCityString": "{\"success\":false,\"message\":\"没有获取相关数据！\"}",
-		"jobListPageCityString": "{\"success\":false,\"message\":\"没有获取相关数据！\"}",
-		"jobListPageCompanyString": "{\"success\":false,\"message\":\"没有获取相关数据！\"}",
-		"jobDetailPageCompanyString": "{\"success\":false,\"message\":\"没有获取相关数据！\"}",
-		"companyDetailPagePositionString": "{\"success\":true,\"message\":\"查询数据成功！\",\"data\":[{\"id\":155,\"title\":\"HTML5招聘\",\"linkUrl\":\"http://www.lagou.com/zhaopin/HTML5/\",\"recommendType\":\"Jobs\",\"showPosition\":\"company_details\",\"enable\":0,\"rank\":1,\"openType\":\"_blank\"},{\"id\":153,\"title\":\"产品经理招聘\",\"linkUrl\":\"http://www.lagou.com/zhaopin/chanpinjingli/\",\"recommendType\":\"Jobs\",\"showPosition\":\"company_details\",\"enable\":0,\"rank\":2,\"openType\":\"_blank\"}]}",
-		"jobDetailPageCityString": "{\"success\":false,\"message\":\"没有获取相关数据！\"}"
-	},
-	"requestId": null,
-	"success": false,
-	"msg": null,
-	"code": 0,
-	"resubmitToken": null
+	"fileId": "r/resume2/M00/44/91/CgrpkFcgUU6AKS7_AALo8YFeXrk117.doc",
+	"name": "\u0026#24352;\u0026#20122;\u0026#26093;",
+	"sex": "\u0026#30007;",
+	"birthday": "1992.07",
+	"email": "alanzhangyx@163.com",
+	"phone": "18201362232",
+	"city": "\u0026#21271;\u0026#20140;",
+	"lastSchoolName": "周口师范学院",
+	"education": "\u0026#26412;\u0026#31185;",
+	"experience": "3.0",
+	"lastCompanyName": "北京都在哪网讯科技有限公司",
+	"lastPositionName": "Java研发工程师",
+	"professionalSkill": "",
+	"personal": "\u003cp\u003e\u003c/p\u003e\n\u003cp\u003e个人博客：http://blog.csdn.net/u010297957\u003c/p\u003e\n\u003cp\u003e我的目标是全栈工程师\u003c/p\u003e\n\u003cp\u003e一专：对Java的方方面面\u003c/p\u003e\n\u003col\u003e\n \u003cli\u003e\u003cp\u003e对Java基础有很好的了解和掌握：如JVM、多线程、I/O、JNI等等；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003e对JavaEE，以及主流JavaEE框架也有较好的认识；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003e对JavaEEWeb容器Tomcat、WebSphere等以及Http服务器Apache，以及其负载均衡；\u003c/p\u003e\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e多能：对很多其他方面技术\u003c/p\u003e\n\u003col\u003e\n \u003cli\u003e\u003cp\u003eLinux类OS如CentOS、Ubuntu及其上Java相关的环境和应用部署；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003e做过简单Android开发；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003e做过.NET开发，如WinForm、ASP.NET；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003eJavaScript、HTML5、CSS3以及JS库和前端框架：jQuery、EasyUI、jQuery Mobile、BootStrap等；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003e源码管理工具：SVN、Git及其相关平台GitHub、Git oschina；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003e关系数据库：MySQL、SQLServer、Oracle，建模工具PowerDesigner；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003eNoSQL：MongoDB、Redis；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003e项目管理工具：Maven；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003eDreamweaver、Photoshop；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003eGoogle、Stack OverFlow、CSDN等；\u003c/p\u003e\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e\u003c/p\u003e\n\u003cp\u003e\u003c/p\u003e",
+	"workExperience": [
+		{
+			"company": "北京都在哪网讯科技有限公司",
+			"position": "Java研发工程师",
+			"startDate": "2015.07",
+			"endDate": "至今",
+			"content": "\u003cp\u003e部门：平台部\u003c/p\u003e\n\u003cp\u003e职位：主力开发\u003c/p\u003e\n\u003cp\u003e全面负责项目的设计与开发\u003c/p\u003e"
+		},
+		{
+			"company": "北京银恒通电子科技有限公司",
+			"position": "Java研发工程师",
+			"startDate": "2014.06",
+			"endDate": "2015.07",
+			"content": "\u003cp\u003e部门：供职驻中国银行信用卡中心核心软件开发团队；\u003c/p\u003e\n\u003cp\u003e职责：主力开发\u003c/p\u003e\n\u003col\u003e\n \u003cli\u003e\u003cp\u003e需求分析：参与与中行客户进行需求澄清与明确，编写部分概要设计文档与SOR；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003e设计：编写详细设计文档，与架构师合作设计项目系统架构；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003e开发：核心代码的编写，项目的测试、部署，并指导小组其他开发人员的开发工作；\u003c/p\u003e\u003c/li\u003e\n\u003c/ol\u003e"
+		},
+		{
+			"company": "北京高迈致远信息技术有限公司",
+			"position": "Java开发工程师",
+			"startDate": "2013.12",
+			"endDate": "2014.05",
+			"content": "\u003cp\u003e \u003c/p\u003e\n\u003cp\u003e\u003c/p\u003e\n\u003cp\u003e工作：半年实习\u003c/p\u003e\n\u003cp\u003e部门：大数据工程中心\u003c/p\u003e\n\u003cp\u003e职责：开发小组组员\u003c/p\u003e\n\u003col\u003e\n \u003cli\u003e\u003cp\u003e大四从学校来到北京面试到公司任职Java实习开发；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003e系统的实践了软件开发全流程：从问题定义与分析到概要设计，从详细设计到UML类图、用例图的设计，从项目的编码、测试到运行和维护等等工作；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003e具体项目是负责OA系统\u0026quot;国机集团信息管理系统\u0026quot;的开发和测试工作，开发了审计稽查子系统。\u003c/p\u003e\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e\u003c/p\u003e\n\u003cp\u003e\u003c/p\u003e\n\u003cp\u003e \u003c/p\u003e"
+		}
+	],
+	"educationExperience": [
+		{
+			"school": "周口师范学院",
+			"speciality": "软件工程",
+			"education": "本科",
+			"endDate": "2014"
+		}
+	],
+	"succeed": false
 }
+,{"fileId":"r/resume2/M00/44/91/CgrpkFcgUU6AKS7_AALo8YFeXrk117.doc","name":"\u0026#24352;\u0026#20122;\u0026#26093;","sex":"\u0026#30007;","birthday":"1992.07","email":
+"alanzhangyx@163.com","phone":"18201362232","city":"\u0026#21271;\u0026#20140;","lastSchoolName":"周口师范学院","education":"\u0026#26412;\u0026#31185;","experience":"3.0","lastCompanyName":"北京都在哪网讯科技有限公司","lastPositionName":"Java研发工程师","professionalSkill":"","personal":"\u003cp\u003e\u003c/p\u003e\n\u003cp\u003e个人博客：http://blog.csdn.net/u010297957\u003c/p\u003e\n\u003cp\u003e我的目标是全栈工程师\u003c/p\u003e\n\u003cp\u003e一专：对Java的方方面面\u003c/p\u003e\n\u003col\u003e\n \u003cli\u003e\u003cp\u003e对Java基础有很好的了解和掌握：如JVM、多线程、I/O、JNI等等；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003e对JavaEE，以及主流JavaEE框架也有较好的认识；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003e对JavaEEWeb容器Tomcat、WebSphere等以及Http服务器Apache，以及其负载均衡；\u003c/p\u003e\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e多能：对很多其他方面技术\u003c/p\u003e\n\u003col\u003e\n \u003cli\u003e\u003cp\u003eLinux类OS如CentOS、Ubuntu及其上Java相关的环境和应用部署；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003e做过简单Android开发；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003e做过.NET开发，如WinForm、ASP.NET；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003eJavaScript、HTML5、CSS3以及JS库和前端框架：jQuery、EasyUI、jQuery Mobile、BootStrap等；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003e源码管理工具：SVN、Git及其相关平台GitHub、Git oschina；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003e关系数据库：MySQL、SQLServer、Oracle，建模工具PowerDesigner；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003eNoSQL：MongoDB、Redis；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003e项目管理工具：Maven；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003eDreamweaver、Photoshop；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003eGoogle、Stack OverFlow、CSDN等；\u003c/p\u003e\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e\u003c/p\u003e\n\u003cp\u003e\u003c/p\u003e","workExperience":[{"company":"北京都在哪网讯科技有限公司","position":"Java研发工程师","startDate":"2015.07","endDate":"至今","content":"\u003cp\u003e部门：平台部\u003c/p\u003e\n\u003cp\u003e职位：主力开发\u003c/p\u003e\n\u003cp\u003e全面负责项目的设计与开发\u003c/p\u003e"},{"company":"北京银恒通电子科技有限公司","position":"Java研发工程师","startDate":"2014.06","endDate":"2015.07","content":"\u003cp\u003e部门：供职驻中国银行信用卡中心核心软件开发团队；\u003c/p\u003e\n\u003cp\u003e职责：主力开发\u003c/p\u003e\n\u003col\u003e\n \u003cli\u003e\u003cp\u003e需求分析：参与与中行客户进行需求澄清与明确，编写部分概要设计文档与SOR；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003e设计：编写详细设计文档，与架构师合作设计项目系统架构；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003e开发：核心代码的编写，项目的测试、部署，并指导小组其他开发人员的开发工作；\u003c/p\u003e\u003c/li\u003e\n\u003c/ol\u003e"},{"company":"北京高迈致远信息技术有限公司","position":"Java开发工程师","startDate":"2013.12","endDate":"2014.05","content":"\u003cp\u003e \u003c/p\u003e\n\u003cp\u003e\u003c/p\u003e\n\u003cp\u003e工作：半年实习\u003c/p\u003e\n\u003cp\u003e部门：大数据工程中心\u003c/p\u003e\n\u003cp\u003e职责：开发小组组员\u003c/p\u003e\n\u003col\u003e\n \u003cli\u003e\u003cp\u003e大四从学校来到北京面试到公司任职Java实习开发；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003e系统的实践了软件开发全流程：从问题定义与分析到概要设计，从详细设计到UML类图、用例图的设计，从项目的编码、测试到运行和维护等等工作；\u003c/p\u003e\u003c/li\u003e\n \u003cli\u003e\u003cp\u003e具体项目是负责OA系统\u0026quot;国机集团信息管理系统\u0026quot;的开发和测试工作，开发了审计稽查子系统。\u003c/p\u003e\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e\u003c/p\u003e\n\u003cp\u003e\u003c/p\u003e\n\u003cp\u003e \u003c/p\u003e"}],"educationExperience":[{"school":"周口师范学院","speciality":"软件工程","education":"本科","endDate":"2014"}],"succeed":false}
