@@ -45,7 +45,7 @@ public class PersonBean implements Serializable{
     public void setName(String name) {
         this.name = name;
     }
-
+    
     /**
      * 注意：对于boolean（不包括Boolean）来说，默认没有get而是is
      * @return
