@@ -24,14 +24,13 @@ public class Launcher {
         InvocationHandler handler = new InvocationHandler(){
             @Override
             public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-                
-                return null;
+                return method.invoke(proxy, args);
             }
         };
         Class<?> proxyClass = Proxy.getProxyClass(BuyGoodsService.class.getClassLoader(), BuyGoodsService.class);
         service = (BuyGoodsService) proxyClass.getConstructor(InvocationHandler.class).newInstance(handler);
+        System.err.println(service.buy("节操"));
         
-
     }
 
 }
