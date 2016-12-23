@@ -1,5 +1,7 @@
 package experiment.com;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -36,14 +38,15 @@ public class Test1 {
             e.printStackTrace();
         }*/
         
-        String email = "1234@sdf.sdf";
+        /*String email = "1234@sdf.sdf";
         
         Pattern p = Pattern.compile("(@)");
         Matcher Matcher = p.matcher(email);
         if (Matcher.find()) {
             String s = Matcher.group(1);
             System.out.println(s);
-        }
+        }*/
+        
         
     }
     
