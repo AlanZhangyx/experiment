@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+       http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+       
+    <!-- 指定自己采用的自定义的validator实现HibernateValidator -->
+    <mvc:annotation-driven validator="validator"/>
+    
+    <!-- 仅scan所有的@controller -->
+    <context:component-scan base-package="com.ddup" use-default-filters="false">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+    
+    <!-- ++++++++++++++++++++++++++++++++++++++ i18n start +++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- i18n 资源文件 -->
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <!-- 默认编码方式，spring默认是"ISO-8859-1"，不利于编写messages文件 -->
+        <property name="defaultEncoding" value="UTF-8"/>
+        <!-- basename i18n 资源文件前半部分文件名称 从classpath开始 -->
+        <property name="basename" value="com.iwhere.i18n.messages" />
+        <!-- 如果 i18n 找不到对应的资源文件，采用默认的key 作为message输出 -->
+        <property name="useCodeAsDefaultMessage" value="true" />
+    </bean>
+    
+    <!-- 启动Spring MVC的注解功能，完成请求和注解POJO的映射 -->
+    <!-- 映射处理器 -->
+    <bean id="handlerMapping" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
+        <!-- 拦截器 Interceptors -->
+        <property name="interceptors">
+            <list>
+                <!-- i18n -->
+                <!-- 国际化操作 拦截器 必需配置，可以和其它国际化方式通用 -->
+                <bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor"/>
+            </list>
+        </property>
+    </bean>
+    
+    <!-- 基于请求参数:language国际化拦截器 -->
+    <!-- <bean id="localeResolver" class="com.iwhere.i18n.IWLocaleResolver"/> -->
+    
+    <!-- ++++++++++++++++++++++++++++++++++++++ i18n end +++++++++++++++++++++++++++++++++++++++++ -->
+    
+    <!-- HibernateValidator配置后台数据校验,校验描述文件是上面定义的messageSource文件 -->
+    <bean id="validator"  class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
+        <property name="providerClass"  value="org.hibernate.validator.HibernateValidator"/>
+        <!-- 如果不加默认到 使用classpath下的 ValidationMessages.properties -->
+        <property name="validationMessageSource" ref="messageSource"/>
+    </bean>
+    
+</beans>
